@@ -251,6 +251,6 @@
 250	fafafa: 
 251	fbfbfb: 
 252	fcfcfc: 
-253	fdfdfd: 
-254	fefefe: 
+253	fdfdfd: Blood
+254	fefefe: FPlyThroughWall
 255	ffffff: nothing
