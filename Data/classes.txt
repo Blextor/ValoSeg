@@ -250,7 +250,7 @@
 249	f9f9f9: 
 250	fafafa: 
 251	fbfbfb: 
-252	fcfcfc: 
+252	fcfcfc: WeaponTrinket
 253	fdfdfd: Blood
 254	fefefe: FPlyThroughWall
 255	ffffff: nothing
