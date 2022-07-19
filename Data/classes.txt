@@ -247,9 +247,9 @@
 246	f6f6f6: 
 247	f7f7f7: 
 248	f8f8f8: 
-249	f9f9f9: 
-250	fafafa: 
-251	fbfbfb: 
+249	f9f9f9: Muzzle
+250	fafafa: Pellet
+251	fbfbfb: CritHit
 252	fcfcfc: WeaponTrinket
 253	fdfdfd: Blood
 254	fefefe: FPlyThroughWall
