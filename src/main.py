@@ -383,12 +383,13 @@ target_transform_tr = transforms.Compose([
 
 folder = "RoboCupSeg"
 folder2 = "Valo2"
+folder3 = folder2
 
-trainLoader = data.DataLoader(SSDataSet(folder2, split="train", img_transform=input_transform_tr,
+trainLoader = data.DataLoader(SSDataSet(folder3, split="train", img_transform=input_transform_tr,
                                              label_transform=target_transform_tr),
                                   batch_size=8, shuffle=True)
 
-testLoader = data.DataLoader(SSDataSet(folder2, split="val", img_transform=input_transform,
+testLoader = data.DataLoader(SSDataSet(folder3, split="val", img_transform=input_transform,
                                              label_transform=target_transform),
                                   batch_size=8, shuffle=True)
 
@@ -412,14 +413,14 @@ net = FCN(64,numClass).cuda()
 
 criterion = nn.CrossEntropyLoss().cuda()
 
-optimizer = optim.Adam(net.parameters(), lr=1e-0, weight_decay=1e-4)
+optimizer = optim.Adam(net.parameters(), lr=1e-1, weight_decay=1e-4)
 
-borders = 143
+borders = 50
 
 scheduler = lr_scheduler.StepLR(optimizer,borders)
 
 # Epoch counter
-numEpoch = 1000
+numEpoch = 250
 
 trLosses = []
 trAccs = []
